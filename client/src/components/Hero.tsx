@@ -30,11 +30,11 @@ export default function Hero() {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-4" data-testid="text-name">
-            Derrick Yu
+            Hi, I'm Derrick Yu.
           </h1>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8" data-testid="text-tagline">
-            Hi, I'm Derrick. I love building apps that make life easier and more enjoyable. I'm always learning, solving problems, and finding creative ways to bring ideas to life. I'm excited to bring a new perspective to projects and tackle any technical problems!
+            I love building apps that make life easier and more enjoyable. I'm always learning, solving problems, and finding creative ways to bring ideas to life. I'm excited to bring a new perspective to projects and tackle any technical problems!
           </p>
         </div>
 
