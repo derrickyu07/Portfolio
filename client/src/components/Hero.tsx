@@ -21,7 +21,7 @@ export default function Hero() {
     >
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
-          <div className="w-32 h-40 mx-auto mb-6 overflow-hidden rounded-lg ring-4 ring-primary/20">
+          <div className="w-32 h-40 mx-auto mb-6 overflow-hidden rounded-xl border-2 border-border/30 shadow-lg">
             <img 
               src={profileImage} 
               alt="Derrick Yu" 

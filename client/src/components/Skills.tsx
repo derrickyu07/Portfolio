@@ -76,12 +76,6 @@ export default function Skills() {
           })}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="text-muted-foreground max-w-2xl mx-auto" data-testid="text-skills-summary">
-            Passionate about learning new technologies and applying them to solve real-world problems. 
-            Experienced in agile development methodologies with a focus on collaborative teamwork and continuous improvement.
-          </p>
-        </div>
       </div>
     </section>
   );
