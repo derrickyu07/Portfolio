@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Download, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
 import profileImage from "@assets/ProfessionalPhoto_1758607235201.jpg";
