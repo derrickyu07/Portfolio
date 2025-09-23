@@ -21,10 +21,13 @@ export default function Hero() {
     >
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
-          <Avatar className="w-32 h-32 mx-auto mb-6 ring-4 ring-primary/20">
-            <AvatarImage src={profileImage} alt="Derrick Yu" />
-            <AvatarFallback className="text-2xl">DY</AvatarFallback>
-          </Avatar>
+          <div className="w-32 h-40 mx-auto mb-6 overflow-hidden rounded-lg ring-4 ring-primary/20">
+            <img 
+              src={profileImage} 
+              alt="Derrick Yu" 
+              className="w-full h-full object-cover"
+            />
+          </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-4" data-testid="text-name">
             Derrick Yu
