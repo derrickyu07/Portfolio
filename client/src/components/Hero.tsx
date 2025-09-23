@@ -33,13 +33,8 @@ export default function Hero() {
             Derrick Yu
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6" data-testid="text-title">
-            Software Engineer
-          </p>
-          
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8" data-testid="text-tagline">
-            Full-stack developer passionate about building scalable applications and exceptional user experiences. 
-            Currently developing innovative solutions at ThankUPet with expertise in React, ASP.NET Core, and cloud technologies.
+            Hi, I'm Derrick. I love building apps that make life easier and more enjoyable. I'm always learning, solving problems, and finding creative ways to bring ideas to life. I'm excited to bring a new perspective to projects and tackle any technical problems!
           </p>
         </div>
 
