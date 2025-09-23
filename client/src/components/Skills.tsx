@@ -1,40 +1,58 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Wrench, Cloud } from "lucide-react";
 
 export default function Skills() {
-  const skillCategories = [
-    {
-      title: "Programming Languages",
-      icon: Code,
-      color: "bg-blue-500/10 border-blue-500/20",
-      iconColor: "text-blue-500",
-      skills: [
-        "Java", "Python", "C#", "SQL (Postgres)", "JavaScript", 
-        "TypeScript", "HTML/CSS", "Dart", "Ruby"
-      ]
-    },
-    {
-      title: "Frameworks & Libraries",
-      icon: Wrench,
-      color: "bg-green-500/10 border-green-500/20",
-      iconColor: "text-green-500",
-      skills: [
-        "React", "Node.js", "Angular", "JUnit", "Express.js", 
-        "Ruby on Rails", ".NET"
-      ]
-    },
-    {
-      title: "Developer Tools & Platforms",
-      icon: Cloud,
-      color: "bg-purple-500/10 border-purple-500/20",
-      iconColor: "text-purple-500",
-      skills: [
-        "Git", "GitHub", "Git Bash", "Docker", "Google Cloud Platform (GCP)", 
-        "VS Code", "Firebase", "Supabase", "Azure"
-      ]
-    }
+  const allSkills = [
+    // Programming Languages
+    { name: "Java", category: "language", weight: "high" },
+    { name: "Python", category: "language", weight: "high" },
+    { name: "C#", category: "language", weight: "high" },
+    { name: "JavaScript", category: "language", weight: "high" },
+    { name: "TypeScript", category: "language", weight: "high" },
+    { name: "SQL (Postgres)", category: "language", weight: "medium" },
+    { name: "HTML/CSS", category: "language", weight: "medium" },
+    { name: "Dart", category: "language", weight: "medium" },
+    { name: "Ruby", category: "language", weight: "medium" },
+    
+    // Frameworks & Libraries
+    { name: "React", category: "framework", weight: "high" },
+    { name: "Node.js", category: "framework", weight: "high" },
+    { name: "ASP.NET Core", category: "framework", weight: "high" },
+    { name: "Express.js", category: "framework", weight: "medium" },
+    { name: "Angular", category: "framework", weight: "medium" },
+    { name: "Flutter", category: "framework", weight: "medium" },
+    { name: "Ruby on Rails", category: "framework", weight: "medium" },
+    { name: ".NET", category: "framework", weight: "medium" },
+    { name: "JUnit", category: "framework", weight: "low" },
+    
+    // Tools & Platforms
+    { name: "Azure", category: "tool", weight: "high" },
+    { name: "Google Cloud Platform", category: "tool", weight: "high" },
+    { name: "Git", category: "tool", weight: "high" },
+    { name: "Docker", category: "tool", weight: "medium" },
+    { name: "Firebase", category: "tool", weight: "medium" },
+    { name: "Supabase", category: "tool", weight: "medium" },
+    { name: "GitHub", category: "tool", weight: "medium" },
+    { name: "VS Code", category: "tool", weight: "low" },
+    { name: "Git Bash", category: "tool", weight: "low" }
   ];
+
+  const getSkillSize = (weight: string) => {
+    switch (weight) {
+      case "high": return "text-lg px-4 py-2";
+      case "medium": return "text-base px-3 py-2";
+      case "low": return "text-sm px-3 py-1.5";
+      default: return "text-base px-3 py-2";
+    }
+  };
+
+  const getSkillVariant = (category: string) => {
+    switch (category) {
+      case "language": return "default";
+      case "framework": return "secondary";
+      case "tool": return "outline";
+      default: return "outline";
+    }
+  };
 
   return (
     <section id="skills" className="py-24 px-6 lg:px-8 bg-muted/30">
@@ -43,37 +61,40 @@ export default function Skills() {
           Technical Skills
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => {
-            const IconComponent = category.icon;
-            return (
-              <Card key={index} className={`hover-elevate transition-all duration-300 ${category.color}`} data-testid={`card-skills-${category.title.toLowerCase().replace(/\s+|&/g, '-')}`}>
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className={`p-2 bg-background rounded-lg`}>
-                      <IconComponent className={`w-5 h-5 ${category.iconColor}`} />
-                    </div>
-                    <CardTitle className="text-lg">{category.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, skillIndex) => (
-                      <Badge 
-                        key={skillIndex} 
-                        variant="outline" 
-                        className="text-sm hover-elevate cursor-default"
-                        data-testid={`badge-skill-${skill.toLowerCase().replace(/\s+|\(|\)|\.|\//g, '-').replace(/--+/g, '-')}`}
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="mb-12">
+          <div className="flex flex-wrap justify-center gap-3 items-center max-w-5xl mx-auto">
+            {allSkills.map((skill, index) => (
+              <Badge 
+                key={index}
+                variant={getSkillVariant(skill.category)}
+                className={`${getSkillSize(skill.weight)} hover-elevate cursor-default transition-all duration-300 hover:scale-105`}
+                data-testid={`badge-skill-${skill.name.toLowerCase().replace(/\s+|\(|\)|\.|\//g, '-').replace(/--+/g, '-')}`}
+              >
+                {skill.name}
+              </Badge>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 text-center text-sm text-muted-foreground">
+          <div>
+            <div className="inline-flex items-center gap-2 mb-2">
+              <Badge variant="default" className="text-xs">Sample</Badge>
+              <span>Core Languages</span>
+            </div>
+          </div>
+          <div>
+            <div className="inline-flex items-center gap-2 mb-2">
+              <Badge variant="secondary" className="text-xs">Sample</Badge>
+              <span>Frameworks & Libraries</span>
+            </div>
+          </div>
+          <div>
+            <div className="inline-flex items-center gap-2 mb-2">
+              <Badge variant="outline" className="text-xs">Sample</Badge>
+              <span>Tools & Platforms</span>
+            </div>
+          </div>
         </div>
 
         <div className="mt-16 text-center">
