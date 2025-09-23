@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Download, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "@assets/generated_images/Professional_software_engineer_headshot_c0ae1778.png";
+import profileImage from "@assets/ProfessionalPhoto_1758607235201.jpg";
 
 export default function Hero() {
   const handleDownloadResume = () => {
