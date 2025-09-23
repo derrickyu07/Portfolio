@@ -11,12 +11,12 @@ export default function Projects() {
       duration: "June 2025 – August 2025",
       technologies: ["ASP.NET Core", "SQL Server", "React", "Azure", "SendGrid"],
       achievements: [
-        "Developing a full-stack healthcare platform with secure authentication using ASP.NET Identity",
+        "Developed a full-stack healthcare platform with secure authentication using ASP.NET Identity",
         "Implemented Profile, Dashboard, Vaccination Tracking, Health News, and Appointment Booking features",
         "Deployed on Azure using GitHub Actions CI/CD pipelines and Docker containers",
         "Integrated SendGrid for automated reminders and notifications, improving patient engagement"
       ],
-      type: "In Development"
+      type: "Completed"
     },
     {
       title: "Transcription and Translation App",
