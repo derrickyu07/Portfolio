@@ -6,7 +6,7 @@ import { execSync } from "child_process";
 import fs from "fs";
 
 export default defineConfig({
-  base: "/Portfolio/",
+  base: "/portfolio",
 
   root: "client",
 
@@ -41,15 +41,5 @@ export default defineConfig({
     },
   },
 
-  build: {
-    outDir: path.resolve(__dirname, "dist"),
-    emptyOutDir: true,
-  },
 
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-  },
 });
