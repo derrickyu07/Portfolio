@@ -1,0 +1,50 @@
+Derrick Yu
+678-448-6648 | derrickyu07@gmail.com | linkedin.com/in/derrickyu07 | github.com/derrickyu07
+Education
+Georgia Institute of Technology Atlanta, GA
+Bachelor of Science in Computer Science Graduation Date: May 2024
+• Relevant Courses: Data Structures & Algorithms, Object-Oriented Programming, Computer Networking,
+Information Security, Machine Learning, Computer Organization & Programming, Computer Vision
+Experience
+Software Engineer Intern | Flutter, Supabase, Google Cloud Platform July 2024 – April 2025
+ThankUPet Singapore
+• Streamlined user registration and profile management, implementing multi-authentication with email, Google, and
+Facebook, resulting in a seamless onboarding process for ThankUPet’s mobile app users
+• Enhanced user experience with search, rating, and messaging features, enabling users to find pet care facilities and
+communicate via text, voice messages, images, and location sharing
+• Improved data accessibility and reliability by implementing a Supabase-backed database, allowing users to manage
+multiple pet profiles and book appointments efficiently
+• Applied agile principles to software development, focusing on business value delivery, collaboration, and continuous
+improvement
+Projects
+UpHealth | ASP.NET Core, SQL Server, React, Azure June 2025 – August 2025
+• Developing a full-stack healthcare appointment scheduling and vaccination management platform with secure
+authentication using ASP.NET Identity
+• Implemented Profile, Dashboard, Vaccination Tracking, Health News, and Appointment Booking features with
+Redux-managed React frontend and RESTful backend APIs
+• Deployed on Azure using GitHub Actions CI/CD pipelines and Docker containers, ensuring scalable and
+cost-effective cloud infrastructure
+• Integrated SendGrid for automated reminders and notifications, improving patient engagement and reducing missed
+appointments
+Transcription and Translation | React, Git, Tailwind May 2024 – August 2024
+• Built a scalable React app to transcribe and translate real-time audio in over 50 languages
+• Leveraged web workers for efficient in-browser ML model execution, reducing latency by 25%
+• Enabled dynamic audio input switching (file uploads, live recording) for enhanced user flexibility
+Instagram Clone | React, Firebase February 2024 – June 2024
+• Achieved secure user management by implementing Firebase Authentication, resulting in streamlined sign-up, login,
+and password reset functionalities
+• Delivered real-time updates by configuring Firebase Firestore, integrating posts, comments, and likes, enhancing
+user engagement
+• Enabled profile customization where users can update their profile pictures, bios, and personal information
+Merinaa Mobile App & Dispatcher Portal | Flutter, PostgreSQL, Express.js, React August 2022 – May 2023
+• Developed a Mental Health Crisis Intervention Assistance Application to support 1000s of individuals with mental
+health conditions by relaying critical information to emergency services
+• Programmed a cross-platform mobile app with Flutter and a website application using React
+• Facilitated seamless integration and data management by designing a REST API, resulting in improved service
+reliability
+• Collaborated with a team of developers following Scrum methodologies, leading to on-time delivery of critical
+features
+Technical Skills
+Languages: Java, Python, C#, SQL (Postgres), JavaScript, TypeScript, HTML/CSS, Dart, Ruby
+Frameworks: React, Node.js, Angular, JUnit, Express.js, Ruby on Rails, .NET
+Developer Tools: Git, GitHub, Git Bash, Docker, Google Cloud Platform (GCP), VS Code, Firebase, Supabase, Azure
